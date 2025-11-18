@@ -579,10 +579,93 @@ and entrance door, plus installing associated hardware.
 
 # 14. Appliances & Equipment Installation
 
+This section covers installation and initial testing of fixed appliances and
+equipment after furniture and services are ready.
+
+## 14.1 Kitchen Appliances
+
+- 14.1.1 Install built-in oven, hob and hood
+	- Fit into cabinets; connect to power/gas as per previous sections; check operation.
+- 14.1.2 Install fridge/freezer (built-in or freestanding)
+	- Level, ventilate as required; check door swing and seal.
+- 14.1.3 Connect dishwasher and other kitchen appliances
+	- Connect to water, waste and power; run basic test cycles.
+
+## 14.2 Laundry & Utility Appliances
+
+- 14.2.1 Install washing machine
+	- Connect to water, waste and power; check balance and leaks.
+- 14.2.2 Install dryer (if any)
+	- Venting or condensate management as required; connect to power.
+
+## 14.3 HVAC, Controls & Special Equipment
+
+- 14.3.1 Final checks for boiler, radiators and floor heating
+	- Confirm thermostats, valves and heating programs operate correctly.
+- 14.3.2 Final checks for AC units
+	- Verify modes, airflow directions and remote controls.
+- 14.3.3 Install and configure low-voltage equipment
+	- Router, Wi‑Fi access points, intercom, cameras and any smart-home devices.
+
 ---
 
 # 15. Cleaning, Punch List & Defects Correction
 
+This section covers thorough cleaning, inspection of works and correction of
+defects before handover.
+
+## 15.1 Rough and Intermediate Cleaning
+
+- 15.1.1 Remove construction debris and protections
+	- Carefully remove floor and furniture protections; dispose of waste.
+- 15.1.2 Clean surfaces for inspection
+	- Basic cleaning of floors, walls, windows, furniture and sanitary ware.
+
+## 15.2 Punch List (Snagging)
+
+- 15.2.1 Walk-through with detailed checklist
+	- Identify visual and functional defects by room and by trade.
+- 15.2.2 Record punch list items
+	- Simple list with location, description, responsible trade and priority.
+
+## 15.3 Defects Correction
+
+- 15.3.1 Coordinate trades for corrections
+	- Painters, electricians, plumbers, carpenters, etc. scheduled to fix items.
+- 15.3.2 Re-inspect corrected items
+	- Confirm issues are resolved; update punch list status.
+
+## 15.4 Final Cleaning
+
+- 15.4.1 Perform final deep clean
+	- All rooms, inside cabinets where accessible, sanitary ware, windows and frames.
+- 15.4.2 Final visual check after cleaning
+	- Ensure finishes are clean and presentable for handover.
+
 ---
 
 # 16. Handover & Move-In Preparation
+
+This section covers final documentation, user instructions and practical
+preparations for moving into the apartment.
+
+## 16.1 Documentation & Manuals
+
+- 16.1.1 Collect certificates and approvals
+	- Electrical tests, gas tests/approvals, boiler/AC commissioning reports.
+- 16.1.2 Gather product manuals and warranties
+	- Appliances, boiler, AC units and other equipment.
+
+## 16.2 User Orientation
+
+- 16.2.1 Explain key systems and controls
+	- Location and use of electrical panel, shut-off valves, thermostats and intercom.
+- 16.2.2 Provide basic maintenance guidance
+	- Filter cleaning, boiler service intervals, ventilation and care of finishes.
+
+## 16.3 Move-In Preparation
+
+- 16.3.1 Remove remaining temporary protections and signage
+	- Ensure circulation paths are clear and safe for furniture delivery.
+- 16.3.2 Final handover walk-through
+	- Confirm acceptance of works and note any remaining minor items (if any).
