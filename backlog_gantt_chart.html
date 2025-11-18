@@ -9,6 +9,14 @@
     /* Make the grid columns narrow for a Gantt look */
     .day-col { min-width: 2.5rem; }
 
+    /* Vertical text for weekday headers */
+    .day-header-vertical {
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      transform: rotate(180deg);
+      white-space: nowrap;
+    }
+
     /* Sticky first two columns (Room, Task) */
     .sticky-room {
       position: sticky;
@@ -34,68 +42,575 @@
 
     <section class="bg-slate-900/70 border border-slate-800 rounded-xl shadow-sm overflow-hidden">
       <div class="overflow-x-auto">
-        <!-- Phase + Room/Task headers -->
+        <!-- Phase + Room/Task headers (each phase = 2 weeks × 5 days = 10 columns) -->
         <div class="border-b border-slate-800 bg-slate-900/90 min-w-max">
-          <div class="grid" style="grid-template-columns: 12rem 16rem repeat(35, minmax(2.2rem, 1fr));">
-            <div class="sticky-room px-3 py-2 text-xs font-semibold uppercase tracking-wide text-slate-400 border-r border-slate-800 flex items-center bg-slate-950">Room</div>
-            <div class="sticky-task px-3 py-2 text-xs font-semibold uppercase tracking-wide text-slate-400 border-r border-slate-800 flex items-center bg-slate-950">Task</div>
+          <!-- Top row: phase names (English / Armenian) -->
+          <div class="grid" style="grid-template-columns: 12rem 16rem repeat(70, minmax(2.2rem, 1fr));">
+            <div class="sticky-room px-3 py-2 text-xs font-semibold uppercase tracking-wide text-slate-400 border-r border-slate-800 flex flex-col justify-center bg-slate-950">
+              <span>Room</span>
+              <span class="text-[0.65rem] text-slate-500 normal-case">Սենյակ</span>
+            </div>
+            <div class="sticky-task px-3 py-2 text-xs font-semibold uppercase tracking-wide text-slate-400 border-r border-slate-800 flex flex-col justify-center bg-slate-950">
+              <span>Task</span>
+              <span class="text-[0.65rem] text-slate-500 normal-case">Խնդիր</span>
+            </div>
 
-            <!-- Phases 1-7 blocks -->
-            <div class="col-span-5 flex items-center justify-center text-xs font-semibold text-slate-200 bg-slate-900/60 border-r border-slate-800">Phase 1</div>
-            <div class="col-span-5 flex items-center justify-center text-xs font-semibold text-slate-200 bg-slate-900/60 border-r border-slate-800">Phase 2</div>
-            <div class="col-span-5 flex items-center justify-center text-xs font-semibold text-slate-200 bg-slate-900/60 border-r border-slate-800">Phase 3</div>
-            <div class="col-span-5 flex items-center justify-center text-xs font-semibold text-slate-200 bg-slate-900/60 border-r border-slate-800">Phase 4</div>
-            <div class="col-span-5 flex items-center justify-center text-xs font-semibold text-slate-200 bg-slate-900/60 border-r border-slate-800">Phase 5</div>
-            <div class="col-span-5 flex items-center justify-center text-xs font-semibold text-slate-200 bg-slate-900/60 border-r border-slate-800">Phase 6</div>
-            <div class="col-span-5 flex items-center justify-center text-xs font-semibold text-slate-200 bg-slate-900/60">Phase 7</div>
+            <!-- Phases 1-7 blocks (10 columns each: W1 + W2) -->
+            <div class="col-span-10 flex flex-col items-center justify-center text-xs font-semibold text-slate-200 bg-slate-900/60 border-r border-slate-800">
+              <span>Phase 1</span>
+              <span class="text-[0.65rem] text-slate-400 font-normal">Փուլ 1</span>
+            </div>
+            <div class="col-span-10 flex flex-col items-center justify-center text-xs font-semibold text-slate-200 bg-slate-900/60 border-r border-slate-800">
+              <span>Phase 2</span>
+              <span class="text-[0.65rem] text-slate-400 font-normal">Փուլ 2</span>
+            </div>
+            <div class="col-span-10 flex flex-col items-center justify-center text-xs font-semibold text-slate-200 bg-slate-900/60 border-r border-slate-800">
+              <span>Phase 3</span>
+              <span class="text-[0.65rem] text-slate-400 font-normal">Փուլ 3</span>
+            </div>
+            <div class="col-span-10 flex flex-col items-center justify-center text-xs font-semibold text-slate-200 bg-slate-900/60 border-r border-slate-800">
+              <span>Phase 4</span>
+              <span class="text-[0.65rem] text-slate-400 font-normal">Փուլ 4</span>
+            </div>
+            <div class="col-span-10 flex flex-col items-center justify-center text-xs font-semibold text-slate-200 bg-slate-900/60 border-r border-slate-800">
+              <span>Phase 5</span>
+              <span class="text-[0.65rem] text-slate-400 font-normal">Փուլ 5</span>
+            </div>
+            <div class="col-span-10 flex flex-col items-center justify-center text-xs font-semibold text-slate-200 bg-slate-900/60 border-r border-slate-800">
+              <span>Phase 6</span>
+              <span class="text-[0.65rem] text-slate-400 font-normal">Փուլ 6</span>
+            </div>
+            <div class="col-span-10 flex flex-col items-center justify-center text-xs font-semibold text-slate-200 bg-slate-900/60">
+              <span>Phase 7</span>
+              <span class="text-[0.65rem] text-slate-400 font-normal">Փուլ 7</span>
+            </div>
           </div>
-          <!-- Weekday sub-row -->
-          <div class="grid text-[0.65rem] text-slate-400" style="grid-template-columns: 12rem 16rem repeat(35, minmax(2.2rem, 1fr));">
+
+          <!-- Middle row: week names (Week 1 / Week 2, English / Armenian) -->
+          <div class="grid text-[0.65rem] text-slate-300" style="grid-template-columns: 12rem 16rem repeat(70, minmax(2.2rem, 1fr));">
             <div class="sticky-room px-3 py-1 border-r border-slate-800 bg-slate-900/90"></div>
             <div class="sticky-task px-3 py-1 border-r border-slate-800 bg-slate-900/90"></div>
-            <!-- 7 phases × 5 days (Mon-Fri) -->
-            <!-- Phase 1 Days -->
-            <div class="day-col py-1 border-r border-slate-800 text-center">Mon</div>
-            <div class="day-col py-1 border-r border-slate-800 text-center">Tue</div>
-            <div class="day-col py-1 border-r border-slate-800 text-center">Wed</div>
-            <div class="day-col py-1 border-r border-slate-800 text-center">Thu</div>
-            <div class="day-col py-1 border-r border-slate-800 text-center">Fri</div>
-            <!-- Phase 2 Days -->
-            <div class="day-col py-1 border-r border-slate-800 text-center">Mon</div>
-            <div class="day-col py-1 border-r border-slate-800 text-center">Tue</div>
-            <div class="day-col py-1 border-r border-slate-800 text-center">Wed</div>
-            <div class="day-col py-1 border-r border-slate-800 text-center">Thu</div>
-            <div class="day-col py-1 border-r border-slate-800 text-center">Fri</div>
-            <!-- Phase 3 Days -->
-            <div class="day-col py-1 border-r border-slate-800 text-center">Mon</div>
-            <div class="day-col py-1 border-r border-slate-800 text-center">Tue</div>
-            <div class="day-col py-1 border-r border-slate-800 text-center">Wed</div>
-            <div class="day-col py-1 border-r border-slate-800 text-center">Thu</div>
-            <div class="day-col py-1 border-r border-slate-800 text-center">Fri</div>
-            <!-- Phase 4 Days -->
-            <div class="day-col py-1 border-r border-slate-800 text-center">Mon</div>
-            <div class="day-col py-1 border-r border-slate-800 text-center">Tue</div>
-            <div class="day-col py-1 border-r border-slate-800 text-center">Wed</div>
-            <div class="day-col py-1 border-r border-slate-800 text-center">Thu</div>
-            <div class="day-col py-1 border-r border-slate-800 text-center">Fri</div>
-            <!-- Phase 5 Days -->
-            <div class="day-col py-1 border-r border-slate-800 text-center">Mon</div>
-            <div class="day-col py-1 border-r border-slate-800 text-center">Tue</div>
-            <div class="day-col py-1 border-r border-slate-800 text-center">Wed</div>
-            <div class="day-col py-1 border-r border-slate-800 text-center">Thu</div>
-            <div class="day-col py-1 border-r border-slate-800 text-center">Fri</div>
-            <!-- Phase 6 Days -->
-            <div class="day-col py-1 border-r border-slate-800 text-center">Mon</div>
-            <div class="day-col py-1 border-r border-slate-800 text-center">Tue</div>
-            <div class="day-col py-1 border-r border-slate-800 text-center">Wed</div>
-            <div class="day-col py-1 border-r border-slate-800 text-center">Thu</div>
-            <div class="day-col py-1 border-r border-slate-800 text-center">Fri</div>
-            <!-- Phase 7 Days -->
-            <div class="day-col py-1 border-r border-slate-800 text-center">Mon</div>
-            <div class="day-col py-1 border-r border-slate-800 text-center">Tue</div>
-            <div class="day-col py-1 border-r border-slate-800 text-center">Wed</div>
-            <div class="day-col py-1 border-r border-slate-800 text-center">Thu</div>
-            <div class="day-col py-1 text-center">Fri</div>
+
+            <!-- Each phase: Week 1 (first 5 columns), Week 2 (next 5 columns) -->
+            <!-- Phase 1 weeks -->
+            <div class="col-span-5 flex flex-col items-center justify-center border-r border-slate-800 bg-slate-900/70">
+              <span>Week 1</span>
+              <span >Շաբաթ 1</span>
+            </div>
+            <div class="col-span-5 flex flex-col items-center justify-center border-r border-slate-800 bg-slate-900/70">
+              <span>Week 2</span>
+              <span >Շաբաթ 2</span>
+            </div>
+            <!-- Phase 2 weeks -->
+            <div class="col-span-5 flex flex-col items-center justify-center border-r border-slate-800 bg-slate-900/70">
+              <span>Week 1</span>
+              <span >Շաբաթ 1</span>
+            </div>
+            <div class="col-span-5 flex flex-col items-center justify-center border-r border-slate-800 bg-slate-900/70">
+              <span>Week 2</span>
+              <span >Շաբաթ 2</span>
+            </div>
+            <!-- Phase 3 weeks -->
+            <div class="col-span-5 flex flex-col items-center justify-center border-r border-slate-800 bg-slate-900/70">
+              <span>Week 1</span>
+              <span >Շաբաթ 1</span>
+            </div>
+            <div class="col-span-5 flex flex-col items-center justify-center border-r border-slate-800 bg-slate-900/70">
+              <span>Week 2</span>
+              <span >Շաբաթ 2</span>
+            </div>
+            <!-- Phase 4 weeks -->
+            <div class="col-span-5 flex flex-col items-center justify-center border-r border-slate-800 bg-slate-900/70">
+              <span>Week 1</span>
+              <span >Շաբաթ 1</span>
+            </div>
+            <div class="col-span-5 flex flex-col items-center justify-center border-r border-slate-800 bg-slate-900/70">
+              <span>Week 2</span>
+              <span >Շաբաթ 2</span>
+            </div>
+            <!-- Phase 5 weeks -->
+            <div class="col-span-5 flex flex-col items-center justify-center border-r border-slate-800 bg-slate-900/70">
+              <span>Week 1</span>
+              <span >Շաբաթ 1</span>
+            </div>
+            <div class="col-span-5 flex flex-col items-center justify-center border-r border-slate-800 bg-slate-900/70">
+              <span>Week 2</span>
+              <span >Շաբաթ 2</span>
+            </div>
+            <!-- Phase 6 weeks -->
+            <div class="col-span-5 flex flex-col items-center justify-center border-r border-slate-800 bg-slate-900/70">
+              <span>Week 1</span>
+              <span >Շաբաթ 1</span>
+            </div>
+            <div class="col-span-5 flex flex-col items-center justify-center border-r border-slate-800 bg-slate-900/70">
+              <span>Week 2</span>
+              <span >Շաբաթ 2</span>
+            </div>
+            <!-- Phase 7 weeks -->
+            <div class="col-span-5 flex flex-col items-center justify-center border-r border-slate-800 bg-slate-900/70">
+              <span>Week 1</span>
+              <span >Շաբաթ 1</span>
+            </div>
+            <div class="col-span-5 flex flex-col items-center justify-center bg-slate-900/70">
+              <span>Week 2</span>
+              <span >Շաբաթ 2</span>
+            </div>
+          </div>
+
+          <!-- Bottom row: weekday labels (vertical Mon–Fri, English / Armenian) -->
+          <div class="grid text-[0.65rem] text-slate-400" style="grid-template-columns: 12rem 16rem repeat(70, minmax(2.2rem, 1fr));">
+            <div class="sticky-room px-3 py-1 border-r border-slate-800 bg-slate-900/90"></div>
+            <div class="sticky-task px-3 py-1 border-r border-slate-800 bg-slate-900/90"></div>
+            <!-- 7 phases × 2 weeks × 5 days (Mon–Fri) -->
+            <!-- Phase 1: Week 1 -->
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Mon
+                <span class="text-[0.8rem] text-slate-500">Երկ</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Tue
+                <span class="text-[0.8rem] text-slate-500">Երք</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Wed
+                <span class="text-[0.8rem] text-slate-500">Չոր</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Thu
+                <span class="text-[0.8rem] text-slate-500">Հնգ</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Fri
+                <span class="text-[0.8rem] text-slate-500">Ուր</span>
+              </span>
+            </div>
+            <!-- Phase 1: Week 2 -->
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Mon
+                <span class="text-[0.8rem] text-slate-500">Երկ</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Tue
+                <span class="text-[0.8rem] text-slate-500">Երք</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Wed
+                <span class="text-[0.8rem] text-slate-500">Չոր</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Thu
+                <span class="text-[0.8rem] text-slate-500">Հնգ</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Fri
+                <span class="text-[0.8rem] text-slate-500">Ուր</span>
+              </span>
+            </div>
+
+            <!-- Phase 2 -->
+            <!-- repeat the same Mon–Fri EN/AM pattern for each of the 10 columns in the phase -->
+            
+            <!-- The pattern below is repeated verbatim for Phases 2–7 to keep alignment with 70 columns -->
+            <!-- Phase 2: Week 1 -->
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Mon
+                <span class="text-[0.8rem] text-slate-500">Երկ</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Tue
+                <span class="text-[0.8rem] text-slate-500">Երք</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Wed
+                <span class="text-[0.8rem] text-slate-500">Չոր</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Thu
+                <span class="text-[0.8rem] text-slate-500">Հնգ</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Fri
+                <span class="text-[0.8rem] text-slate-500">Ուր</span>
+              </span>
+            </div>
+            <!-- Phase 2: Week 2 -->
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Mon
+                <span class="text-[0.8rem] text-slate-500">Երկ</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Tue
+                <span class="text-[0.8rem] text-slate-500">Երք</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Wed
+                <span class="text-[0.8rem] text-slate-500">Չոր</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Thu
+                <span class="text-[0.8rem] text-slate-500">Հնգ</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Fri
+                <span class="text-[0.8rem] text-slate-500">Ուր</span>
+              </span>
+            </div>
+
+            <!-- Phase 3 -->
+            <!-- Week 1 -->
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Mon
+                <span class="text-[0.8rem] text-slate-500">Երկ</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Tue
+                <span class="text-[0.8rem] text-slate-500">Երք</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Wed
+                <span class="text-[0.8rem] text-slate-500">Չոր</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Thu
+                <span class="text-[0.8rem] text-slate-500">Հնգ</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Fri
+                <span class="text-[0.8rem] text-slate-500">Ուր</span>
+              </span>
+            </div>
+            <!-- Week 2 -->
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Mon
+                <span class="text-[0.8rem] text-slate-500">Երկ</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Tue
+                <span class="text-[0.8rem] text-slate-500">Երք</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Wed
+                <span class="text-[0.8rem] text-slate-500">Չոր</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Thu
+                <span class="text-[0.8rem] text-slate-500">Հնգ</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Fri
+                <span class="text-[0.8rem] text-slate-500">Ուր</span>
+              </span>
+            </div>
+
+            <!-- Phase 4 -->
+            <!-- Week 1 -->
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Mon
+                <span class="text-[0.8rem] text-slate-500">Երկ</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Tue
+                <span class="text-[0.8rem] text-slate-500">Երք</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Wed
+                <span class="text-[0.8rem] text-slate-500">Չոր</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Thu
+                <span class="text-[0.8rem] text-slate-500">Հնգ</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Fri
+                <span class="text-[0.8rem] text-slate-500">Ուր</span>
+              </span>
+            </div>
+            <!-- Week 2 -->
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Mon
+                <span class="text-[0.8rem] text-slate-500">Երկ</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Tue
+                <span class="text-[0.8rem] text-slate-500">Երք</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Wed
+                <span class="text-[0.8rem] text-slate-500">Չոր</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Thu
+                <span class="text-[0.8rem] text-slate-500">Հնգ</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Fri
+                <span class="text-[0.8rem] text-slate-500">Ուր</span>
+              </span>
+            </div>
+
+            <!-- Phase 5 -->
+            <!-- Week 1 -->
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Mon
+                <span class="text-[0.8rem] text-slate-500">Երկ</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Tue
+                <span class="text-[0.8rem] text-slate-500">Երք</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Wed
+                <span class="text-[0.8rem] text-slate-500">Չոր</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Thu
+                <span class="text-[0.8rem] text-slate-500">Հնգ</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Fri
+                <span class="text-[0.8rem] text-slate-500">Ուր</span>
+              </span>
+            </div>
+            <!-- Week 2 -->
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Mon
+                <span class="text-[0.8rem] text-slate-500">Երկ</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Tue
+                <span class="text-[0.8rem] text-slate-500">Երք</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Wed
+                <span class="text-[0.8rem] text-slate-500">Չոր</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Thu
+                <span class="text-[0.8rem] text-slate-500">Հնգ</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Fri
+                <span class="text-[0.8rem] text-slate-500">Ուր</span>
+              </span>
+            </div>
+
+            <!-- Phase 6 -->
+            <!-- Week 1 -->
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Mon
+                <span class="text-[0.8rem] text-slate-500">Երկ</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Tue
+                <span class="text-[0.8rem] text-slate-500">Երք</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Wed
+                <span class="text-[0.8rem] text-slate-500">Չոր</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Thu
+                <span class="text-[0.8rem] text-slate-500">Հնգ</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Fri
+                <span class="text-[0.8rem] text-slate-500">Ուր</span>
+              </span>
+            </div>
+            <!-- Week 2 -->
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Mon
+                <span class="text-[0.8rem] text-slate-500">Երկ</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Tue
+                <span class="text-[0.8rem] text-slate-500">Երք</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Wed
+                <span class="text-[0.8rem] text-slate-500">Չոր</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Thu
+                <span class="text-[0.8rem] text-slate-500">Հնգ</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Fri
+                <span class="text-[0.8rem] text-slate-500">Ուր</span>
+              </span>
+            </div>
+
+            <!-- Phase 7 -->
+            <!-- Week 1 -->
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Mon
+                <span class="text-[0.8rem] text-slate-500">Երկ</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Tue
+                <span class="text-[0.8rem] text-slate-500">Երք</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Wed
+                <span class="text-[0.8rem] text-slate-500">Չոր</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Thu
+                <span class="text-[0.8rem] text-slate-500">Հնգ</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Fri
+                <span class="text-[0.8rem] text-slate-500">Ուր</span>
+              </span>
+            </div>
+            <!-- Week 2 -->
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Mon
+                <span class="text-[0.8rem] text-slate-500">Երկ</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Tue
+                <span class="text-[0.8rem] text-slate-500">Երք</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Wed
+                <span class="text-[0.8rem] text-slate-500">Չոր</span>
+              </span>
+            </div>
+            <div class="day-col py-1 border-r border-slate-800 text-center">
+              <span class="day-header-vertical">
+                Thu
+                <span class="text-[0.8rem] text-slate-500">Հնգ</span>
+              </span>
+            </div>
+            <div class="day-col py-1 text-center">
+              <span class="day-header-vertical">
+                Fri
+                <span class="text-[0.8rem] text-slate-500">Ուր</span>
+              </span>
+            </div>
           </div>
         </div>
 
@@ -139,13 +654,17 @@
     function parseCsvLines(lines) {
       const [headerLine, ...dataLines] = lines;
       const headers = headerLine.split(",").map(h => h.trim());
-      // We expect: Room, Task, then 35 date columns
+      // Expected: Room, Task, then 35 date columns
       return dataLines.map(line => {
         const raw = line.split(",");
         const room = (raw[0] || "").trim();
         const task = (raw[1] || "").trim();
         const days = raw.slice(2).map(v => v.trim());
-        return { room, task, days };
+        return {
+          room,
+          task,
+          days,
+        };
       });
     }
 
@@ -162,24 +681,38 @@
     function createRow({ room, task, days }) {
       const { lane, cell } = roomColor(room);
       const row = document.createElement("div");
-      row.className = "grid items-stretch";
-      row.style.gridTemplateColumns = "12rem 16rem repeat(35, minmax(2.2rem, 1fr))";
+  row.className = "grid items-stretch";
+  row.style.gridTemplateColumns = "12rem 16rem repeat(70, minmax(2.2rem, 1fr))";
 
       // Room (sticky)
       const roomDiv = document.createElement("div");
-      roomDiv.className = `sticky-room px-3 py-2 text-xs font-semibold uppercase tracking-wide ${lane} border-r border-slate-900 flex items-center bg-slate-950/90`;
-      roomDiv.textContent = room;
+      roomDiv.className = `sticky-room px-3 py-2 text-xs font-semibold uppercase tracking-wide ${lane} border-r border-slate-900 flex flex-col justify-center bg-slate-950/90`;
+      // Expect combined value like "Ապարտամենտ / Apartment" and split to two lines
+      const roomParts = room.split("/").map(p => p.trim()).filter(Boolean);
+      const roomLine1 = roomParts[0] || room;
+      const roomLine2 = roomParts[1] || "";
+      roomDiv.innerHTML = `
+        <div class="text-[0.7rem] leading-tight">${roomLine1}</div>
+        ${roomLine2 ? `<div class=\"text-[0.65rem] leading-tight text-slate-300\">${roomLine2}</div>` : ""}
+      `;
 
       // Task (sticky)
       const taskDiv = document.createElement("div");
-      taskDiv.className = "sticky-task px-3 py-2 text-sm bg-slate-900/90 text-slate-100 border-r border-slate-900 flex items-center";
-      taskDiv.textContent = task;
+      taskDiv.className = "sticky-task px-3 py-2 text-xs bg-slate-900/90 text-slate-100 border-r border-slate-900 flex flex-col justify-center";
+      // Expect combined value like "Ապրումներ / Approvals" and split to two lines
+      const taskParts = task.split("/").map(p => p.trim()).filter(Boolean);
+      const taskLine1 = taskParts[0] || task;
+      const taskLine2 = taskParts[1] || "";
+      taskDiv.innerHTML = `
+        <div class="text-[0.7rem] leading-tight">${taskLine1}</div>
+        ${taskLine2 ? `<div class=\"text-[0.65rem] leading-tight text-slate-300\">${taskLine2}</div>` : ""}
+      `;
 
       row.appendChild(roomDiv);
       row.appendChild(taskDiv);
 
-      // 35 day cells (7 phases × 5 days) from CSV
-      for (let i = 0; i < 35; i++) {
+  // 70 day cells (7 phases × 2 weeks × 5 days) from CSV
+  for (let i = 0; i < 70; i++) {
         const val = (days[i] || "").trim();
         const cellDiv = document.createElement("div");
         cellDiv.className = "day-col flex items-center justify-center text-xs";
