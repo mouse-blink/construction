@@ -93,17 +93,36 @@ These phases are guidelines for sequencing. Pull the listed stories into each ph
 
 Each room epic includes a scope summary and story-sized tasks; room work is tracked independently while respecting system gates.
 
+### Epic: Pre-Construction & Logistics
+- Scope: Pre-construction paperwork, approvals, site setup, protection, and temporary construction utilities.
+- Stories:
+  - Story: Verify building rules and renovation time windows [tags: Admin, Scheduling] [phase: 1]
+  - Story: Obtain building/HOA renovation approval [tags: Admin] [phase: 1]
+  - Story: Check permits required (structural, gas, electrical) [tags: Admin, Safety] [phase: 1]
+  - Story: Notify neighbors about noisy works [tags: Admin, Logistics] [phase: 1]
+  - Story: Plan protected zones (items that must not be damaged) [tags: Safety, Protection] [phase: 1]
+  - Story: Install temporary protection inside apartment [tags: Protection, Logistics] [phase: 1]
+  - Story: Protect common building areas (elevator, stairs, corridors) [tags: Protection, Logistics] [phase: 1]
+  - Story: Arrange temporary construction utilities & welfare area [tags: Logistics, Safety] [phase: 1]
+
 ### Epic: Apartment (Site-wide)
-- Scope: Whole-apartment tasks that apply to all rooms.
+- Scope: Whole-apartment tasks that apply to all rooms, including controls, schedule, inspections, cleaning and handover.
 - Stories:
   - Story: Approvals, neighbors, site rules [tags: Admin] [phase: 1]
   - Story: Safety & assurance setup [tags: Safety, QA] [phase: 1]
   - Story: Place long-lead orders and track ROS dates [tags: Procurement, Logistics] [phase: 1]
+  - Story: Define inspection & test plans by trade [tags: QA, Inspections, Testing] [phase: 1]
+  - Story: Establish meeting cadence and reporting [tags: Admin, Scheduling] [phase: 1]
+  - Story: Weekly update of 3-week lookahead and manpower [tags: Scheduling, Logistics] [phase: 2-7]
   - Story: Prepare inspection calendar and bookings [tags: Inspections, Scheduling] [phase: 2]
-  - Story: Compile closeout docs and handover plan [tags: Docs, Closeout, Training] [phase: 7]
   - Story: Selective demolition and openings [tags: Demo, Substrates, QA] [phase: 1]
+  - Story: Rough and intermediate cleaning [tags: Cleaning, Logistics] [phase: 6]
+  - Story: Rolling punch list and defect corrections [tags: QA, Closeout] [phase: 7]
+  - Story: Final deep clean and move-in preparation [tags: Cleaning, Closeout] [phase: 7]
+  - Story: Compile as-builts, asset list and warranties [tags: Docs, Closeout] [phase: 7]
+  - Story: User training and O&M handover [tags: Training, Closeout] [phase: 7]
+  - Story: Compile closeout docs and handover plan [tags: Docs, Closeout, Training] [phase: 7]
   - Story: Prepare site-specific safety plan [tags: Safety, QA] [phase: 1]
-  - Story: Install temporary protection [tags: Protection, Logistics] [phase: 1]
 
 ### Epic: Studio (Living/Kitchen)
 - Scope: Kitchen cabinets/worktop/backsplash; living walls/ceilings/flooring; lighting and power; HVAC indoor unit (if planned).
@@ -137,21 +156,13 @@ Each room epic includes a scope summary and story-sized tasks; room work is trac
   - Story: Final checks and ventilation [tags: Testing, HVAC, Electrical] [phase: 6]
   - Story: Pressure test water lines [tags: Plumbing, Testing] [phase: 2]
 
-### Epic: Kids Bedroom 1
-- Scope: Walls/ceiling finishing, flooring, sockets/lighting, wardrobes if any.
+### Epic: Kids Bedrooms (BR1 & BR2)
+- Scope: Walls/ceiling finishing, flooring, sockets/lighting, wardrobes if any for both kids rooms.
 - Stories:
-  - Story: Kids BR1 rough-in [tags: MEP, Electrical, Data] [phase: 2]
-  - Story: Kids BR1 surfaces and paint [tags: Drywall, Painting] [phase: 3,6]
-  - Story: Kids BR1 flooring and joinery [tags: Flooring, Joinery] [phase: 5]
-  - Story: Kids BR1 final electrical [tags: Electrical] [phase: 6]
-
-### Epic: Kids Bedroom 2
-- Scope: As per Kids Bedroom 1.
-- Stories:
-  - Story: Kids BR2 rough-in [tags: MEP, Electrical, Data] [phase: 2]
-  - Story: Kids BR2 surfaces and paint [tags: Drywall, Painting] [phase: 3,6]
-  - Story: Kids BR2 flooring and joinery [tags: Flooring, Joinery] [phase: 5]
-  - Story: Kids BR2 final electrical [tags: Electrical] [phase: 6]
+  - Story: Kids BR1/2 rough-in [tags: MEP, Electrical, Data] [phase: 2]
+  - Story: Kids BR1/2 surfaces and paint [tags: Drywall, Painting] [phase: 3,6]
+  - Story: Kids BR1/2 flooring and joinery [tags: Flooring, Joinery] [phase: 5]
+  - Story: Kids BR1/2 final electrical [tags: Electrical] [phase: 6]
 
 ### Epic: Master Bedroom
 - Scope: Bedroom finishes and power/lighting.
