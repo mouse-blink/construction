@@ -7,6 +7,51 @@ the structure and keep it easy to read.
 
 ---
 
+# 0. Project Management, Safety & Controls
+
+Overarching controls to manage safety, quality, cost, schedule, risk and changes across all trades.
+
+## 0.1 Project Execution & Communication
+
+- 0.1.1 Define roles and responsibilities
+	- Client, CM, trades, decision-makers, communication channels and response times.
+- 0.1.2 Establish meeting cadence and reporting
+	- Weekly coordination, 3-week lookahead, daily check-ins; simple weekly report template.
+
+## 0.2 Safety & Site Rules
+
+- 0.2.1 Prepare site-specific safety plan
+	- Hazards (dust/silica, live services, height), PPE, emergency contacts, first aid.
+- 0.2.2 Permits-to-work and lockout/tagout
+	- Hot work permits, electrical/gas LOTO during interventions; tool testing as required.
+- 0.2.3 Dust/noise control and neighbor care
+	- Extraction, containment, quiet hours, elevator/stair protection, complaint protocol.
+
+## 0.3 Quality Assurance & Documentation
+
+- 0.3.1 Inspection & Test Plans (ITPs) by trade
+	- Hold points, checklists, acceptance criteria for rough-in, waterproofing, commissioning.
+- 0.3.2 Photo and record logs
+	- Pre-cover photos, material batch records, test certificates, daily notes.
+- 0.3.3 As-built and change tracking
+	- Update marked-up plans and simple change log as work progresses.
+
+## 0.4 Risk, Change & Cost Control
+
+- 0.4.1 Risk register and mitigations
+	- Top risks (long-leads, inspections, hidden conditions) with owners and triggers.
+- 0.4.2 RFI and change control process
+	- Simple RFI form, approval flow, impact on cost/schedule tracked.
+- 0.4.3 Cost breakdown and budget tracking
+	- Map WBS to CBS codes; planned vs actual; contingency drawdown rules.
+
+## 0.5 Schedule & Milestones Framework
+
+- 0.5.1 High-level milestones and buffers
+	- Rough-in complete, waterproofing approved, close-walls, tiling complete, commissioning, handover.
+- 0.5.2 Gate criteria
+	- Define entry/exit criteria for key phases (e.g., tests passed before close-up).
+
 # 1. Pre-Construction & Planning
 
 Pre-construction covers paperwork, utilities, coordination and physical preparation
@@ -81,6 +126,40 @@ and damage to existing elements.
 - 1.6.4 Prepare simple on-site rules sheet
 	- Clean-up expectations, noise limits, smoking rules, key handling.
 
+## 1.7 Submittals & Approvals
+
+- 1.7.1 Collect product data and drawings for approval
+	- Boiler/AC, radiators, manifolds, windows/doors, tiles, fixtures, valves, electrical devices.
+- 1.7.2 Approve finishes and samples
+	- Tiles, paints, worktops, fronts/panels; record final selections and codes.
+
+## 1.8 Procurement & Long-Lead Plan
+
+- 1.8.1 Identify long-lead items and lead times
+	- Custom windows/doors, millwork, stone worktops, HVAC, boiler, fixtures, specialty lights.
+- 1.8.2 Place orders and track ROS dates
+	- Required-on-site dates aligned to schedule gates; alternates documented.
+- 1.8.3 Delivery and storage plan
+	- Book elevator/route; indoor storage limits; moisture/temperature protections.
+
+## 1.9 Inspections & Permits Plan
+
+- 1.9.1 Map required inspections and authorities
+	- Electrical, gas, boiler/AC commissioning, waterproofing checks.
+- 1.9.2 Booking timeline and prerequisites
+	- Lead times, documents required, responsible party identified.
+
+## 1.10 Assurance (Design, Materials, Preconditions)
+
+- 1.10.1 Design freeze and first-off plan
+	- Finalize single-line diagrams, plumbing schematics, tile/cabinet layouts; schedule first-off installations before bulk work.
+- 1.10.2 System compatibility verification
+	- Approve materials by system (e.g., full waterproofing system); record compatibility notes and storage/handling needs.
+- 1.10.3 Environmental preconditions and measurements
+	- Define substrate moisture/flatness/temperature/humidity thresholds for flooring, waterproofing, tiling and painting; add to 3-week lookahead.
+- 1.10.4 Installer briefing and acceptance criteria
+	- 1-page method and acceptance criteria per activity posted on site; crew brief before start.
+
 ---
 
 # 2. Demolition & Structural Works
@@ -127,6 +206,22 @@ they can be corrected or rerouted.
 - 2.4.2 Clean and prepare opened areas for MEP work
 	- Clear debris so electricians/plumbers/HVAC can work safely and accurately.
 
+## 2.5 Pre-Cover Hold Points
+
+- 2.5.1 Confirm all demo openings and routes are adequate
+	- Validate access for planned conduits, pipes, vents; adjust before MEP rough-in.
+- 2.5.2 Record existing conditions
+	- Photo log of exposed utilities and structure for future reference.
+
+## 2.6 Assurance (Demolition & Substrates)
+
+- 2.6.1 Pre-demo utility verification
+	- Confirm lockout/tagout and live services isolation; mark protected zones.
+- 2.6.2 Dust/noise control in place
+	- Extraction, containment, neighbor notifications per building rules.
+- 2.6.3 Substrate survey with measurements
+	- Record wall/ceiling/floor flatness with 2 m straightedge; map defects and repair plan before rough-in.
+
 ---
 
 # 3. MEP Rough-In (Mechanical, Electrical, Plumbing)
@@ -170,51 +265,69 @@ ready before closing walls.
 
 ## 3.3 Plumbing Rough-In (Water & Waste)
 
-- 3.2.1 Confirm plumbing layout for water & waste
+- 3.3.1 Confirm plumbing layout for water & waste
 	- Fixture locations (WC, basin, shower, kitchen sink, dishwasher, washing machine).
-- 3.2.2 Shut off and secure existing water lines
+- 3.3.2 Shut off and secure existing water lines
 	- Temporary caps/valves; coordinate shutdown times with building rules.
-- 3.2.3 Route and fix new water supply lines
+- 3.3.3 Route and fix new water supply lines
 	- Cold/hot water piping routes in walls/floors; slopes, insulation where needed.
-- 3.2.4 Route and fix new waste/vent lines
+- 3.3.4 Route and fix new waste/vent lines
 	- Drains from fixtures with proper slope and access; check noise/stack rules.
-- 3.2.5 Install in-wall frames and mounting kits (if any)
+- 3.3.5 Install in-wall frames and mounting kits (if any)
 	- WC frames, concealed mixers, shower sets, niche supports.
-- 3.2.6 Pressure test water lines
+- 3.3.6 Pressure test water lines
 	- Perform pressure test before closing; document results.
-- 3.2.7 Leak and flow check for drains
+- 3.3.7 Leak and flow check for drains
 	- Basic water test for new drains and connections.
 
 ## 3.4 Gas Rough-In
 
-- 3.3.1 Confirm gas layout and appliances
+- 3.4.1 Confirm gas layout and appliances
 	- Gas hob, boiler, other gas appliances; allowed locations and ventilation needs.
-- 3.3.2 Confirm gas meter location and access
+- 3.4.2 Confirm gas meter location and access
 	- Existing or new meter position, reading access, and shut-off valve location.
-- 3.3.3 Shut off and secure existing gas lines
+- 3.4.3 Shut off and secure existing gas lines
 	- Temporary caps/valves; coordinate shutdown with building/utility provider.
-- 3.3.4 Route and fix new gas lines
+- 3.4.4 Route and fix new gas lines
 	- Gas piping routes, shut-off valve locations, appliance connection points per code.
-- 3.3.5 Provide ventilation and combustion air paths
+- 3.4.5 Provide ventilation and combustion air paths
 	- Vent openings, ducts or windows as required by code and appliance manuals.
-- 3.3.6 Perform gas tightness / pressure test (by certified person)
+- 3.4.6 Perform gas tightness / pressure test (by certified person)
 	- Official leak/pressure test and documentation before closing.
-- 3.3.7 Book official inspection / sign-off (where required)
+- 3.4.7 Book official inspection / sign-off (where required)
 	- Coordinate with certified contractor/authority for final approval of rough-in.
 
 ## 3.5 Mechanical / HVAC Prep
-- 3.4.1 Confirm HVAC / ventilation concept
+- 3.5.1 Confirm HVAC / ventilation concept
 	- Locations for indoor units, ducting, grilles, and exhaust/intake points.
-- 3.4.2 Provide openings and routes for ducts/pipes
+- 3.5.2 Provide openings and routes for ducts/pipes
 	- Wall/ceiling openings, sleeves through partitions, routes to balconies/shafts.
-- 3.4.3 Install supports and brackets
+- 3.5.3 Install supports and brackets
 	- Mounting supports for indoor units, duct hangers, vibration isolation where needed.
-- 3.4.4 Rough-in condensate and drain lines
+- 3.5.4 Rough-in condensate and drain lines
 	- Ensure gravity slope or plan condensate pumps; avoid future leak risks.
-- 3.4.5 Pull control and power cables for HVAC
+- 3.5.5 Pull control and power cables for HVAC
 	- Cables for indoor units, thermostats, control panels.
-- 3.4.6 Basic functional checks (where possible)
+- 3.5.6 Basic functional checks (where possible)
 	- Verify routing, clearances and access before closing walls/ceilings.
+
+## 3.6 Hold Points & Approvals
+
+- 3.6.1 Rough-in tests completed and documented
+	- Electrical insulation/continuity, water pressure, drain flow, gas tightness.
+- 3.6.2 Authority/utility inspections booked or passed
+	- Where required for gas/electrical before close-up.
+- 3.6.3 Pre-cover photo record and as-built markups
+	- Capture routes, box locations, valves; update simple plans.
+
+## 3.7 Assurance (MEP Rough-In)
+
+- 3.7.1 First-off samples
+	- Approve one electrical room bay (boxes depth, conduit fixing/segregation/labels), one bathroom plumbing wall (frames, mixer depths), and one HVAC indoor unit mount (clearances, condensate slope) before scaling.
+- 3.7.2 Measurable standards
+	- Electrical: min separation LV/ELV, max conduit fill, min bend radius, labeling format; Plumbing: pressure test medium/duration/allowable drop; Drains: measured slopes; Gas: certified fitter, leak test parameters.
+- 3.7.3 Environmental and protection
+	- Protect pipe/cable penetrations; avoid thermal bridges; maintain fire/sound seals where applicable.
 
 ---
 
@@ -264,6 +377,54 @@ heated floors, radiators), domestic hot water distribution, and air conditioning
 
 ---
 
+## 4.4 Assurance (HVAC Systems)
+
+- 4.4.1 Manufacturer submittal conformance
+	- Verify unit clearances, line set sizes, max equivalent lengths, and power requirements.
+- 4.4.2 Refrigerant circuit quality
+	- Nitrogen purge during brazing; vacuum to target microns; record stabilization; pressure/leak test documented.
+- 4.4.3 Condensate management
+	- Water test slopes/traps/pumps before closing; vibration isolation installed as specified.
+
+# 5. Scheduling & Resource Planning
+
+Plan and control manpower, inspections and deliveries to avoid trade stacking and idle time.
+
+## 5.1 Master Schedule & Milestones
+
+- 5.1.1 Define key milestones and buffers
+	- Rough-in complete, waterproofing approved, close-walls, finishes complete, commissioning, handover.
+- 5.1.2 Identify critical path activities
+	- Long-leads, inspections, drying/curing periods.
+
+## 5.2 3-Week Lookahead & Manpower
+
+- 5.2.1 Weekly update of lookahead plan
+	- Tasks, responsible trade, required predecessors, constraints.
+- 5.2.2 Manpower loading by trade
+	- Planned crew sizes per week to meet targets.
+
+## 5.3 Inspections & Bookings
+
+- 5.3.1 Inspection calendar
+	- Lead times for gas/electrical/boiler/AC, waterproofing checks; prepare prerequisites.
+- 5.3.2 Neighbor and building bookings
+	- Elevator/stair reservations, noisy work windows, delivery slots.
+
+## 5.4 Delivery & ROS Alignment
+
+- 5.4.1 Align deliveries to gates
+	- Ensure long-leads arrive before dependent activities without overfilling storage.
+- 5.4.2 Confirm storage and handling plans
+	- Environmental protections and damage prevention.
+
+## 5.5 Assurance Enablers
+
+- 5.5.1 Embed cure/inspection buffers
+	- Protect drying windows and inspection lead times in the lookahead; no trade stacking that violates cure.
+- 5.5.2 First-off timing
+	- Schedule first-off/mockups early enough to inform bulk work and procurement.
+
 # 6. Drywall, Partitions & Ceilings
 
 This section covers construction of partitions, wall linings and ceiling systems
@@ -297,6 +458,22 @@ after MEP rough-in is complete.
 	- Confirm all cables, pipes, ducts and boxes are in place and tested.
 - 6.3.2 Protect and label hidden services
 	- Photos and notes of routes; labels on access panels and key junctions.
+
+## 6.4 Hold Points & Inspections
+
+- 6.4.1 Verify all MEP rough-in approvals prior to close-up
+	- Tests documented; inspections passed where required.
+- 6.4.2 Frame/board inspection (if applicable)
+	- Check fixings, spacing, fire/sound details; access panels located and labeled.
+
+## 6.5 Assurance (Drywall, Partitions & Ceilings)
+
+- 6.5.1 Board type and placement
+	- Moisture/fire-rated boards in correct zones; staggered joints away from openings.
+- 6.5.2 Fixing and flatness criteria
+	- Screw spacing and embedment per system; flatness tolerance ≤2 mm under 2 m straightedge for finishes-ready surfaces.
+- 6.5.3 Acoustic and fire integrity
+	- Continuous seals at perimeters/penetrations; evidence photos before close.
 
 ---
 
@@ -336,6 +513,15 @@ rooms (excluding fully tiled wet areas handled in section 8).
 	- Walk-through in all rooms; check around radiators, doors and built-ins.
 - 7.4.2 Protect finished floors
 	- Cover with suitable protection until move-in or final cleaning.
+
+## 7.5 Assurance (Flooring)
+
+- 7.5.1 Substrate moisture and flatness
+	- Measure and log CM/%RH per flooring type; flatness ≤3 mm under 2 m straightedge (or per manufacturer).
+- 7.5.2 System readiness
+	- Underfloor heating commissioned and cycled before install; acclimate flooring and underlay as required.
+- 7.5.3 Expansion and transitions
+	- Define expansion gaps and movement joints; approve sample threshold/transition detail before bulk install.
 
 ---
 
@@ -385,6 +571,22 @@ bathrooms, WC and kitchen splash zones.
 - 8.4.3 Protect finished tiling
 	- Temporary protection in high-traffic zones until project completion.
 
+## 8.5 Hold Points & Approvals
+
+- 8.5.1 Waterproofing approval and cure times respected
+	- Document coverage and drying; sign-off before tiling.
+- 8.5.2 Flood/ponding test records (where required)
+	- Retain records/photos as part of quality file.
+
+## 8.6 Assurance (Tiling & Wet Areas)
+
+- 8.6.1 System compatibility and layout
+	- Approve full system (primer, membrane, tapes, adhesive, grout, sealants); dry-run layout at datum lines with key cuts identified.
+- 8.6.2 Coverage and lippage criteria
+	- Min adhesive coverage per tile size; lippage tolerance per standard/manufacturer; movement joints per plan.
+- 8.6.3 Shower/balcony proofing
+	- 24h flood/ponding test where feasible with measurements and photos before tiling or before handover.
+
 ---
 
 # 9. Painting & Wall Finishes
@@ -426,6 +628,15 @@ not tiled or covered by other special finishes.
 - 9.4.2 Final inspection of wall and ceiling finishes
 	- Check for visible defects under normal lighting; agree any remaining snag list.
 
+## 9.5 Assurance (Painting & Wall Finishes)
+
+- 9.5.1 Surface moisture and prep grades
+	- Moisture within spec; document skim/patch completion; dust-free surfaces.
+- 9.5.2 Sample panel approval
+	- Approve primer/finish system and sheen on a control wall/ceiling before full application.
+- 9.5.3 Recoat and environment
+	- Respect recoat times; maintain temperature/humidity/ventilation; record conditions for first day.
+
 ---
 
 # 10. Electrical Final
@@ -455,6 +666,15 @@ walls are finished and fixtures are installed.
 - 10.2.4 Prepare basic circuit documentation
 	- Updated panel schedule and simple plan with circuit/point references.
 
+## 10.3 Assurance (Electrical Fit-Off)
+
+- 10.3.1 Torque and device standards
+	- Tighten per manufacturer; verify device mounting flushness and alignment.
+- 10.3.2 Instrumented tests
+	- Polarity, insulation resistance, RCD/RCBO trip tests recorded; label circuits per schedule.
+- 10.3.3 Functional assurance
+	- Verify switching logic (2-way/3-way), emergency/essential loads if any; photo documentation of final panel schedule.
+
 ---
 
 # 11. Plumbing Final
@@ -481,6 +701,15 @@ testing of the water and waste systems.
 	- Confirm hot water reaches bathrooms and kitchen with acceptable waiting time.
 - 11.2.4 Final adjustment of fittings
 	- Align taps, shower heads and accessories; seal with silicone where required.
+
+## 11.3 Assurance (Plumbing Fit-Off)
+
+- 11.3.1 Leak and performance
+	- Test cold/hot operation under pressure and temperature; observe for drips post-warm-up.
+- 11.3.2 Flow and drainage
+	- Minimum flow rates achieved; traps sealed; no gurgling or siphon issues.
+- 11.3.3 Temperature safety
+	- Mixing valve setpoints verified; document delivery temps at key fixtures.
 
 ---
 
@@ -525,6 +754,15 @@ furniture, plus any custom millwork elements.
 	- Align gaps, ensure smooth operation and correct soft-close where fitted.
 - 12.5.2 Protect finished furniture and worktops
 	- Temporary protection until final cleaning and handover.
+
+## 12.6 Assurance (Furniture & Millwork)
+
+- 12.6.1 Measure after finishes
+	- Verify dimensions post-finish for accurate fabrication; template worktops.
+- 12.6.2 Fixing and access
+	- Secure to structure where required; maintain access to valves/traps/outlets.
+- 12.6.3 Fit and clearances
+	- Consistent reveals/gaps; anti-tip/leveling confirmed; sample cabinet bay approved.
 
 ---
 
@@ -577,6 +815,15 @@ and entrance door, plus installing associated hardware.
 - 13.4.2 Install window handles, restrictors and stays
 	- Child safety restrictors or ventilation stays if part of design.
 
+## 13.5 Assurance (Doors, Windows & Hardware)
+
+- 13.5.1 Plumb, level, square tolerances
+	- Frames within tolerance; document fixings and shims.
+- 13.5.2 Airtightness and sealing logic
+	- Correct order of tapes/foams/sealants (vapor-tight inside, vapor-open outside) where applicable.
+- 13.5.3 Operation and safety
+	- Clearances to floors; latch/lock function; safety glazing labels where required.
+
 # 14. Appliances & Equipment Installation
 
 This section covers installation and initial testing of fixed appliances and
@@ -606,6 +853,15 @@ equipment after furniture and services are ready.
 	- Verify modes, airflow directions and remote controls.
 - 14.3.3 Install and configure low-voltage equipment
 	- Router, Wi‑Fi access points, intercom, cameras and any smart-home devices.
+
+## 14.4 Assurance (Appliances & Equipment)
+
+- 14.4.1 Ratings and clearances
+	- Verify electrical/gas ratings vs circuits/valves; ensure ventilation clearances.
+- 14.4.2 Commissioning records
+	- Run test cycles; capture error codes/parameters; retain manufacturer startup documentation.
+- 14.4.3 Integration checks
+	- Hood/ducting airflow, dishwasher/washing machine leak checks, cooker hood power and lighting.
 
 ---
 
@@ -642,6 +898,37 @@ defects before handover.
 - 15.4.2 Final visual check after cleaning
 	- Ensure finishes are clean and presentable for handover.
 
+## 15.5 As-Builts & Asset Register
+
+- 15.5.1 Compile as-built drawings/markups
+	- Electrical circuits, valve locations, concealed routes and access points.
+- 15.5.2 Create asset/equipment list
+	- Model/serials for boiler, AC, appliances, valves, protection devices.
+
+## 15.6 Warranties & Certificates
+
+- 15.6.1 Collect warranties and test/commissioning certificates
+	- Electrical, gas, boiler, AC, waterproofing, material warranties.
+
+## 15.7 Training & O&M Handover
+
+- 15.7.1 Provide user training and log acknowledgment
+	- Panels, shut-offs, thermostats, filter cleaning, maintenance intervals.
+
+## 15.8 Final Account & Retention
+
+- 15.8.1 Agree final account and retention terms
+	- Close outstanding changes; define retention release conditions and dates.
+
+## 15.9 Assurance (Defect Prevention & Acceptance)
+
+- 15.9.1 Rolling self-checks by trade
+	- Crews complete in-progress checks daily to prevent late punch accumulation.
+- 15.9.2 Lighting and viewing conditions
+	- Perform inspections under defined light levels and angles; mark and correct promptly.
+- 15.9.3 Evidence pack
+	- Collate photo logs, tests, approvals into a simple acceptance package per room/area.
+
 ---
 
 # 16. Handover & Move-In Preparation
@@ -669,3 +956,12 @@ preparations for moving into the apartment.
 	- Ensure circulation paths are clear and safe for furniture delivery.
 - 16.3.2 Final handover walk-through
 	- Confirm acceptance of works and note any remaining minor items (if any).
+
+## 16.4 Assurance (Sustained Quality)
+
+- 16.4.1 O&M and training sign-offs
+	- Owner acknowledges understanding of systems; record key setpoints and service intervals.
+- 16.4.2 Warranty matrix and contacts
+	- List coverage/terms and whom to contact; include required maintenance to keep warranty valid.
+- 16.4.3 Seasonal checks
+	- Plan for post-occupancy seasonal commissioning (heating/cooling) where relevant.
