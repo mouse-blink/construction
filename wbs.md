@@ -302,25 +302,229 @@ after MEP rough-in is complete.
 
 # 7. Flooring
 
+This section covers preparation and installation of final floor finishes in all
+rooms (excluding fully tiled wet areas handled in section 8).
+
+## 7.1 Substrate Preparation
+
+- 7.1.1 Check floor levels and flatness
+	- Use straightedge to identify dips/high spots; note critical areas (doors, thresholds).
+- 7.1.2 Prepare screeds or levelling compound
+	- Apply levelling compound or local repairs to meet flooring manufacturer tolerances.
+- 7.1.3 Coordinate with heating and services in floor
+	- Ensure underfloor heating, pipes and cables are commissioned/protected before finishes.
+
+## 7.2 Underlays and Acoustic Layers
+
+- 7.2.1 Install underlay / acoustic layer (if required)
+	- Foam, cork or other underlay according to flooring type and acoustic needs.
+- 7.2.2 Install vapor barrier where needed
+	- Especially on slabs or over unheated spaces if required by system.
+
+## 7.3 Laying Floor Finishes
+
+- 7.3.1 Lay wood/laminate/vinyl flooring
+	- Follow expansion gap requirements and planned direction; stagger joints.
+- 7.3.2 Install skirting/baseboards
+	- Fix skirting; seal where needed (e.g. near wet areas) and prepare for painting.
+- 7.3.3 Install thresholds and transitions
+	- Profiles between different floor types and at entrance door.
+
+## 7.4 Final Checks & Protection
+
+- 7.4.1 Inspect flooring for gaps, movement or damage
+	- Walk-through in all rooms; check around radiators, doors and built-ins.
+- 7.4.2 Protect finished floors
+	- Cover with suitable protection until move-in or final cleaning.
+
 ---
 
 # 8. Tiling & Wet Areas
+This section covers preparation, waterproofing and tiling of all wet areas:
+bathrooms, WC and kitchen splash zones.
+
+## 8.1 Substrate & Layout Preparation
+
+- 8.1.1 Check substrates in wet areas
+	- Walls and floors flatness, movement cracks, and compatibility with tile system.
+- 8.1.2 Confirm tile layout and patterns
+	- Tile sizes, grout line layout, key alignments (niches, edges, sanitary fixtures).
+- 8.1.3 Prepare and level floors and walls
+	- Screeds, patching or levelling compound where needed; respect required slopes.
+
+## 8.2 Drains, Slopes & Waterproofing
+
+- 8.2.1 Install and fix floor drains and channels
+	- Shower drains, linear channels and balcony/threshold drains as per design.
+- 8.2.2 Form slopes to drains in wet areas
+	- Shower floor and wet zones sloped correctly toward drains.
+- 8.2.3 Apply waterproofing system
+	- Primers, membranes and tapes to corners, joints, around drains and penetrations.
+- 8.2.4 Waterproof upstands and critical zones
+	- Around bathtubs, shower walls, niches and behind kitchen splashbacks as needed.
+- 8.2.5 Waterproofing inspection and drying time
+	- Visual check for coverage and respect manufacturer drying time before tiling.
+
+## 8.3 Tiling Walls & Floors
+
+- 8.3.1 Tile bathroom and WC walls
+	- Follow layout lines; maintain consistent joints and cut tiles in corners.
+- 8.3.2 Tile bathroom and WC floors
+	- Maintain slopes to drains; avoid lips at shower entries.
+- 8.3.3 Tile kitchen splashbacks and other wet-prone areas
+	- Behind sink, hob and any other specified splash zones.
+- 8.3.4 Grouting and silicone sealing
+	- Grout joints; apply silicone at changes of plane and around sanitary fixtures.
+
+## 8.4 Final Checks in Wet Areas
+
+- 8.4.1 Check falls to drains and ponding
+	- Small water test to confirm no standing water in shower/wet areas.
+- 8.4.2 Check tile alignment and finish
+	- Visible lines, cuts in corners and transitions to other floor finishes.
+- 8.4.3 Protect finished tiling
+	- Temporary protection in high-traffic zones until project completion.
 
 ---
 
 # 9. Painting & Wall Finishes
 
+This section covers preparation and finishing of all walls and ceilings that are
+not tiled or covered by other special finishes.
+
+## 9.1 Surface Preparation
+
+- 9.1.1 Inspect drywall and plaster surfaces
+	- Check joints, corners and repairs from sections 6 and 8; mark defects.
+- 9.1.2 Apply filler and skim where needed
+	- Local repairs or full skim coat to achieve required flatness and smoothness.
+- 9.1.3 Sand and clean surfaces
+	- Sand to even out transitions; remove dust and loose material.
+
+## 9.2 Priming
+
+- 9.2.1 Apply primer to new drywall and plaster
+	- Use appropriate primer for gypsum, skim coat or existing surfaces.
+- 9.2.2 Prime high-moisture areas
+	- Bathrooms and kitchen walls/ceilings that are painted rather than tiled.
+
+## 9.3 Painting & Decorative Finishes
+
+- 9.3.1 Paint ceilings
+	- Usually matt white or specified color; at least two coats.
+- 9.3.2 Paint walls in dry rooms
+	- Living, bedrooms, corridor according to color scheme; two or more coats.
+- 9.3.3 Paint walls in wet-prone areas
+	- Use moisture-resistant paint where specified (e.g. bathroom ceilings/walls above tiles).
+- 9.3.4 Apply any special wall finishes
+	- Feature walls, textured paints or decorative panels as per design.
+
+## 9.4 Touch-Ups and Final Checks
+
+- 9.4.1 Perform local touch-ups after other trades
+	- Repair marks around switches, sockets, radiators, and door/window frames.
+- 9.4.2 Final inspection of wall and ceiling finishes
+	- Check for visible defects under normal lighting; agree any remaining snag list.
+
 ---
 
 # 10. Electrical Final
+
+This section covers final electrical fit-off, testing and documentation after
+walls are finished and fixtures are installed.
+
+## 10.1 Final Fit-Off
+
+- 10.1.1 Install switches and sockets
+	- Fit devices to boxes; ensure correct height, orientation and labeling.
+- 10.1.2 Install light fixtures
+	- Ceiling and wall lights, including balcony/exterior fixtures as per design.
+- 10.1.3 Connect appliances and special equipment
+	- Oven, hob, hood, boiler, AC power connections and any fixed equipment.
+- 10.1.4 Install data/low-voltage outlets
+	- Internet, TV, intercom and camera connection plates where required.
+
+## 10.2 Testing & Verification
+
+- 10.2.1 Functional test of lighting and sockets
+	- Check switching logic, all outlets live, and correct polarity where applicable.
+- 10.2.2 Test RCD/RCBO and protection devices
+	- Verify trip function and labeling of circuits.
+- 10.2.3 Verify low-voltage and data points
+	- Basic connectivity tests for data, intercom and camera feeds.
+- 10.2.4 Prepare basic circuit documentation
+	- Updated panel schedule and simple plan with circuit/point references.
 
 ---
 
 # 11. Plumbing Final
 
+This section covers installation of final plumbing fixtures and functional
+testing of the water and waste systems.
+
+## 11.1 Fixture Installation
+
+- 11.1.1 Install bathroom sanitary ware
+	- WC, basins, shower mixers, shower sets, bathtubs and accessories as per design.
+- 11.1.2 Install kitchen sink and tap
+	- Connect to water, waste and, if present, garbage disposal or filters.
+- 11.1.3 Connect appliances
+	- Dishwasher, washing machine and any other plumbed appliances.
+
+## 11.2 Testing & Adjustments
+
+- 11.2.1 Check for leaks at all connections
+	- Visual check during operation at taps, traps, flexible hoses and appliance inlets.
+- 11.2.2 Check flows and drainage
+	- Sufficient flow at outlets; no slow-draining fixtures or standing water.
+- 11.2.3 Test hot water delivery
+	- Confirm hot water reaches bathrooms and kitchen with acceptable waiting time.
+- 11.2.4 Final adjustment of fittings
+	- Align taps, shower heads and accessories; seal with silicone where required.
+
 ---
 
 # 12. Built-In Furniture & Millwork
+
+This section covers installation of built-in kitchen, bathroom and other fixed
+furniture, plus any custom millwork elements.
+
+## 12.1 Coordination & Checks
+
+- 12.1.1 Confirm final furniture/millwork drawings
+	- Dimensions, finishes and hardware; verify against on-site measurements.
+- 12.1.2 Check services and structure at furniture locations
+	- Ensure electrical, plumbing and HVAC points align with cabinet and appliance plans.
+
+## 12.2 Kitchen Furniture & Worktops
+
+- 12.2.1 Install kitchen base and wall cabinets
+	- Level and fix cabinets; align fronts and gaps; allow for appliances and services.
+- 12.2.2 Install worktops and backsplashes
+	- Fit and seal worktops; cutouts for sink, hob and other built-in elements.
+- 12.2.3 Fit kitchen fronts, panels and plinths
+	- Doors, drawer fronts, end panels, plinths and cover panels as per design.
+
+## 12.3 Bathroom Furniture & Storage
+
+- 12.3.1 Install vanity units and storage cabinets
+	- Coordinate with basin, taps and waste; ensure access to traps and valves.
+- 12.3.2 Install mirrored cabinets or shelves
+	- Fix safely; consider lighting and power for integrated mirrors.
+
+## 12.4 Other Built-Ins & Millwork
+
+- 12.4.1 Install wardrobes and built-in storage
+	- Bedroom and corridor wardrobes, shoe storage and other fixed units.
+- 12.4.2 Install any decorative millwork
+	- Wall panels, window seats, niches, radiator covers or similar items.
+
+## 12.5 Adjustment & Protection
+
+- 12.5.1 Adjust doors, drawers and hardware
+	- Align gaps, ensure smooth operation and correct soft-close where fitted.
+- 12.5.2 Protect finished furniture and worktops
+	- Temporary protection until final cleaning and handover.
 
 ---
 
