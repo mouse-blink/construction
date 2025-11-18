@@ -74,8 +74,10 @@ and damage to existing elements.
 	- Which entrance, which elevator, where keys are stored, who opens.
 - 1.6.2 Decide material delivery and storage areas
 	- Inside flat and/or separate storage space; max weight limits on floors.
-- 1.6.3 Arrange basic on-site facilities
-	- Lighting, temporary toilet access, handwashing, tool storage.
+- 1.6.3 Arrange temporary construction utilities & facilities
+	- Temporary site electricity (distribution board, protected outlets, cable routing).
+	- Temporary toilet for workers (or agreed shared facility rules) and handwashing.
+	- Basic welfare area (tool storage, break spot) within agreed boundaries.
 - 1.6.4 Prepare simple on-site rules sheet
 	- Clean-up expectations, noise limits, smoking rules, key handling.
 
@@ -86,6 +88,78 @@ and damage to existing elements.
 ---
 
 # 3. MEP Rough-In (Mechanical, Electrical, Plumbing)
+
+MEP rough-in is all hidden work before finishes: pipes, drains, cables, boxes and
+mounting frames inside walls, floors and ceilings. Goal: everything tested and
+ready before closing walls.
+
+## 3.1 Electrical Rough-In
+
+- 3.1.1 Confirm final electrical layout
+	- Outlet, switch, light point locations by room; special circuits (oven, hob, AC).
+- 3.1.2 Mark routes and box locations on site
+	- Mark chases, ceiling routes, junction box and switch/outlet box positions.
+- 3.1.3 Create wall and ceiling chases (if needed)
+	- Cut/chisel channels for conduits; respect structural and building limits.
+- 3.1.4 Install conduits, boxes and cable routes
+	- Conduits in walls/ceilings, secure boxes at correct depth and orientation.
+- 3.1.5 Pull cables for power and lighting
+	- Label circuits, keep separation for low-voltage/weak current systems.
+- 3.1.6 Rough-in low-voltage and data (internet, TV, intercom)
+	- Internet/data cables from entry point/router to rooms; TV and intercom lines.
+- 3.1.7 Rough-in control and weak-current cabling
+	- Cables for sensors, smart devices, thermostats and other low-current systems.
+- 3.1.8 Test continuity and insulation of circuits
+	- Basic tests before closing walls; record which circuits and low-voltage lines are complete.
+
+## 3.2 Plumbing Rough-In (Water & Waste)
+
+- 3.2.1 Confirm plumbing layout for water & waste
+	- Fixture locations (WC, basin, shower, kitchen sink, dishwasher, washing machine).
+- 3.2.2 Shut off and secure existing water lines
+	- Temporary caps/valves; coordinate shutdown times with building rules.
+- 3.2.3 Route and fix new water supply lines
+	- Cold/hot water piping routes in walls/floors; slopes, insulation where needed.
+- 3.2.4 Route and fix new waste/vent lines
+	- Drains from fixtures with proper slope and access; check noise/stack rules.
+- 3.2.5 Install in-wall frames and mounting kits (if any)
+	- WC frames, concealed mixers, shower sets, niche supports.
+- 3.2.6 Pressure test water lines
+	- Perform pressure test before closing; document results.
+- 3.2.7 Leak and flow check for drains
+	- Basic water test for new drains and connections.
+
+## 3.3 Gas Rough-In
+
+- 3.3.1 Confirm gas layout and appliances
+	- Gas hob, boiler, other gas appliances; allowed locations and ventilation needs.
+- 3.3.2 Confirm gas meter location and access
+	- Existing or new meter position, reading access, and shut-off valve location.
+- 3.3.3 Shut off and secure existing gas lines
+	- Temporary caps/valves; coordinate shutdown with building/utility provider.
+- 3.3.4 Route and fix new gas lines
+	- Gas piping routes, shut-off valve locations, appliance connection points per code.
+- 3.3.5 Provide ventilation and combustion air paths
+	- Vent openings, ducts or windows as required by code and appliance manuals.
+- 3.3.6 Perform gas tightness / pressure test (by certified person)
+	- Official leak/pressure test and documentation before closing.
+- 3.3.7 Book official inspection / sign-off (where required)
+	- Coordinate with certified contractor/authority for final approval of rough-in.
+
+## 3.4 Mechanical / HVAC Prep (if applicable)
+
+- 3.4.1 Confirm HVAC / ventilation concept
+	- Locations for indoor units, ducting, grilles, and exhaust/intake points.
+- 3.4.2 Provide openings and routes for ducts/pipes
+	- Wall/ceiling openings, sleeves through partitions, routes to balconies/shafts.
+- 3.4.3 Install supports and brackets
+	- Mounting supports for indoor units, duct hangers, vibration isolation where needed.
+- 3.4.4 Rough-in condensate and drain lines
+	- Ensure gravity slope or plan condensate pumps; avoid future leak risks.
+- 3.4.5 Pull control and power cables for HVAC
+	- Cables for indoor units, thermostats, control panels.
+- 3.4.6 Basic functional checks (where possible)
+	- Verify routing, clearances and access before closing walls/ceilings.
 
 ---
 
